@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .container{
@@ -105,4 +106,31 @@ body {
     margin-left: 1rem;
     font-size: 1rem;
     font-weight: bold;
+}
+
+.attribution {
+    align-self: flex-start;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    background-color: var(--neutral-white);
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: hsl(47, 71%, 85%);
+    font-family: var(--font-figtree);
+    font-size: 1rem;
+}
+
+.footer__text{
+    padding: 0.2rem;
+    font-weight: bold;
+}
+
+.text__guest {
+    text-decoration: none;
+    color: var(--neutral-black)
+}
+
+.text__guest:hover {
+    color: var(--primary-yellow);
+    text-decoration: underline;
 }
