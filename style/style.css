@@ -1,2 +1,107 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--primary-yellow);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 28vw;
+    height: 80vh;
+    border: 0.1rem solid var(--neutral-black);
+    border-radius: 1rem;
+    margin-top: 2.5rem;
+    background-color: var(--neutral-white);
+    box-shadow: 0.6rem 0.50rem 0.1rem var(--neutral-black);
+    font-family: var(--font-figtree);
+}
+
+.container:hover{
+    box-shadow: 1rem 1rem 0.2rem var(--neutral-black);
+    cursor: pointer;
+}
+
+.container__svg {
+    align-self: center;
+    width: 90%;
+    height: 40%;
+    border-radius: 1rem;;
+    margin-top: 1.2rem;
+    background-image: url(../assets/images/illustration-article.svg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.container__category {
+    margin: 1rem 0 0 1.3rem;
+    padding: 0.4rem 0 0 0;
+    width: 25%;
+    height: 5%;
+    border: 0.1rem solid hsl(47, 81%, 59%);
+    border-radius: 0.4rem;
+    background-color: var(--primary-yellow);
+    text-align: center;
+    font-weight: bold;
+}
+
+.container__date {
+    margin:0.7rem 0 0 1.3rem;
+    width: 50%;
+    height: 5%;
+    color: var(--neutral-black);
+}
+
+.container__title {
+    margin:0.5rem 0 0 1.3rem;
+    width: 80%;
+    height: 10%;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.container__title:hover {
+    cursor: pointer;
+    color: var(--primary-yellow);
+}
+
+.container__text {
+    margin: -1rem 0 0 1.3rem;
+    width: 80%;
+    height: 15%;
+    color: var(--neutral-gray);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.container__avatar {
+    display: flex;
+    align-items: center;
+    margin: 0 0 1rem 1.3rem;
+    width: 50%;
+    height: 10%;
+}
+
+.container__avatar-icon {
+    width: 20%;
+    height: 70%;
+    border-radius: 2rem;
+    background-image: url(../assets/images/image-avatar.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.avatar__name {
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
